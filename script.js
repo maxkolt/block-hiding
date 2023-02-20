@@ -25,3 +25,28 @@ function blockHiding() {
 }
 
 blockHiding()
+
+
+
+
+
+
+
+
+
+
+// const getModalParam = () => (JSON.parse(localStorage.getItem(bannerElement)) || {});
+// const countModalShowing = getModalParam()?.count || 0;
+// const firstTimeOpeningModal = getModalParam()?.time;
+// const onReloadPage = document.addEventListener("DOMContentLoaded", () => {
+//   const currentDate = +new Date();
+//   if (firstTimeOpeningModal && ((currentDate - firstTimeOpeningModal) >= 24 * 3600 * 1000)) {
+//     localStorage.setItem(bannerElement, JSON.stringify({count: 1, time: currentDate}));
+//     return;
+//   }
+//
+//   if (!countModalShowing) {
+//     localStorage.setItem(bannerElement, JSON.stringify({...getModalParam(), time: currentDate}));
+//   }
+// })
+

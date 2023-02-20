@@ -5,6 +5,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border: 1px solid black;
+}
+
+.calendar-widget {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aqua;
+    visibility: hidden;
 }

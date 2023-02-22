@@ -9,7 +9,7 @@
     border: 1px solid black;
 }
 
-.calendar-widget {
+#rec553381877 {
     position: absolute;
     top: 65%;
     left: 65%;
@@ -17,5 +17,5 @@
     height: 100px;
     border-radius: 50px;
     background-color: aqua;
-    visibility: hidden;
+    display: none;;
 }

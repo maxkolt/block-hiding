@@ -1,19 +1,19 @@
 function removeBanner() {
-  console.log('hello:')
   const bannerElement = document.getElementById('rec551273201')
-  console.log(bannerElement)
-  bannerElement.remove()
+  const divElement = document.getElementById('rec553381877')
+
+  bannerElement.style.display = 'none'
+  divElement.style.display = 'block'
 }
 
 const lastViewKey = 'lastView';
 
 function blockHiding() {
   localStorage.setItem(lastViewKey, new Date().toString())
-
   const key = 'numberOfViews';
   const numberOfViews = localStorage.getItem(key)
   if (!numberOfViews) {
-    localStorage.setItem(0)
+    localStorage.setItem(key, 1)
     return
   }
   const newNumberOfViews = Number(numberOfViews) + 1
@@ -22,11 +22,10 @@ function blockHiding() {
   if (newNumberOfViews <= 3) {
     return;
   }
-  removeBanner()
+  window.addEventListener("DOMContentLoaded", removeBanner);
 }
 
 blockHiding()
-
 
 
 

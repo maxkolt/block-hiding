@@ -28,7 +28,7 @@ function blockHiding() {
     document.getElementById('rec551273201').style.display = 'none'
   }
 }
-blockHiding()
+window.addEventListener("DOMContentLoaded", blockHiding)
 
 
 
